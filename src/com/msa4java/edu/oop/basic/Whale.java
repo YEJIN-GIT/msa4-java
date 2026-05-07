@@ -1,4 +1,4 @@
-package com.msa4java.edu.oop;
+package com.msa4java.edu.oop.basic;
 
 public class Whale {
     // Class는 Field와 Method로 구성되어 있다.

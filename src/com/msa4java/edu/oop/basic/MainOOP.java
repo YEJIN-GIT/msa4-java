@@ -1,4 +1,4 @@
-package com.msa4java.edu.oop;
+package com.msa4java.edu.oop.basic;
 
 public class MainOOP {
     public static void main(String[] args) {
@@ -17,5 +17,20 @@ public class MainOOP {
         // 오버로딩 테스트
         Overloading overloading = new Overloading();
         overloading.print(1,2);
+
+        // 생성자
+        ConJava conJava = new ConJava(20);  // 테스트 샐행됨
+        ConJava conJava1 = new ConJava(30); // 테스트 샐행됨
+
+        System.out.println(conJava.age);    // 20
+        System.out.println(conJava1.age);   // 30
+
+        Marine marine = new Marine(40, 6, 0);
+        System.out.println(marine.getHp());
+        marine.setHp(1000);
+        System.out.println(marine.getHp());  // 1000
+
+        Marine marine2 = new Marine();
+        System.out.println(marine2.getHp()); // 40
     }
 }
